@@ -139,3 +139,7 @@ dmypy.json
 
 ### Visual Studio Code ###
 .vscode/
+
+### go-cqhttp ###
+go-cqhttp
+config.hjson
