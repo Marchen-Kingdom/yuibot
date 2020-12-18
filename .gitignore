@@ -143,3 +143,5 @@ dmypy.json
 ### go-cqhttp ###
 go-cqhttp
 config.hjson
+device.json
+captcha.jpg
