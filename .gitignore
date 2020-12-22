@@ -145,3 +145,5 @@ go-cqhttp
 config.hjson
 device.json
 captcha.jpg
+data/
+codec
