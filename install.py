@@ -3,7 +3,7 @@ from pathlib import Path
 
 import requests
 
-GOCQHTTP_URL = "https://github.com/Mrs4s/go-cqhttp/releases/download/v0.9.35/go-cqhttp-v0.9.35-linux-amd64"
+GOCQHTTP_URL = "https://github.com/Mrs4s/go-cqhttp/releases/download/v0.9.35-fix1/go-cqhttp-v0.9.35-fix1-linux-amd64"
 GOCQHTTP_NAME = "go-cqhttp"
 
 
