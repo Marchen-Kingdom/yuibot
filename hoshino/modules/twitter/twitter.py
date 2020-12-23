@@ -35,7 +35,7 @@ subr_dic = {
         manage_priv=priv.SUPERUSER,
         enable_on_default=False,
         visible=False,
-    ): ["shiratamacaron", "k_yuizaki", "suzukitoto0323", "watanohara2"],
+    ): ["shiratamacaron", "k_yuizaki", "suzukitoto0323"],
 }
 
 latest_info = {}  # { account: {last_tweet_id: int, profile_image: str } }
@@ -152,7 +152,8 @@ async def twitter_poller():
         twts = []
         for account in subr_list:
             twts.extend(buf.get(account, []))
-        await ssv.broadcast(twts, ssv.name, 0.5)
+        if twts:
+            await ssv.broadcast(twts, ssv.name, 0.5)
 
 
 @sv.on_prefix("看推", only_to_me=True)  # for test
