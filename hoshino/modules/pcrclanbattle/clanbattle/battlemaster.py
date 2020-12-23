@@ -49,7 +49,7 @@ class BattleMaster(object):
         yyyy = time.year
         mm = time.month
         dd = time.day
-        if dd < 15:
+        if dd < 10:
             mm = mm - 1
         if mm < 1:
             mm = 12
@@ -70,7 +70,17 @@ class BattleMaster(object):
                 elif m < 12:
                     return 7 if round_ <= 1 else 8
         # All other situation
-        return 4 if round_ >= 35 else 3 if round_ >= 11 else 2 if round_ >= 4 else 1
+        return (
+            5
+            if round_ >= 45
+            else 4
+            if round_ >= 35
+            else 3
+            if round_ >= 11
+            else 2
+            if round_ >= 4
+            else 1
+        )
 
     def get_boss_info(self, round_, boss, server):
         """@return: boss_max_hp, score_rate"""
