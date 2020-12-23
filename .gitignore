@@ -140,6 +140,9 @@ dmypy.json
 ### Visual Studio Code ###
 .vscode/
 
+### YuiBot ###
+config/
+
 ### go-cqhttp ###
 go-cqhttp
 config.hjson
