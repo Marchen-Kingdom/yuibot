@@ -142,6 +142,7 @@ dmypy.json
 
 ### YuiBot ###
 config/
+res/
 
 ### go-cqhttp ###
 go-cqhttp
