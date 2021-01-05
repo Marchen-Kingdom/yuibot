@@ -1,8 +1,8 @@
 import asyncio
 
-import hoshino
+import yuibot
 
-bot = hoshino.init()
+bot = yuibot.init()
 app = bot.asgi
 
 if __name__ == "__main__":
